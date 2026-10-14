@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: metrics-service
+
+server:
+  port: 8080
+
+influx:
+  url: ${INFLUX_URL:http://localhost:8086}
+  token: ${INFLUX_TOKEN:my-super-secret-dev-token}
+  org: ${INFLUX_ORG:varun}
+  bucket: ${INFLUX_BUCKET:metrics}
